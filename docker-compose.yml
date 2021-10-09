@@ -1,7 +1,10 @@
 
 version: '2.2'
-
 services:
+  nginx:
+    image: nginx
+    ports:
+    - "80:80"
   cube:
     image: cubejs/cube:v0.28.19
     ports:

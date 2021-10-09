@@ -18,7 +18,7 @@ cube(`Demoapp`, {
   },
   
   dimensions: {
-    name222: {
+    name: {
       sql: `name`,
       type: `string`
     }
