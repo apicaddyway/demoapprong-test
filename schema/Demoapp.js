@@ -4,7 +4,7 @@ cube(`Demoapp`, {
     // Learn more here: https://cube.dev/docs/caching/pre-aggregations/getting-started  
 
     main: {
-      measures: [Demoapp.count],
+      measures: [Demoapp.count22],
       dimensions: [Demoapp.name]
     }
   },
