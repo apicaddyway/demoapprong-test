@@ -1,22 +1,20 @@
 cube(`Demoapp`, {
-  sql: `SELECT *     FROM demoapp.demoapp`,
-  
-  preAggregations: {
-    // Pre-Aggregations definitions go here
+  sql: `SELECT *  FROM demoapp.demoapp`,
+  preAggregations: {// Pre-Aggregations definitions go here
     // Learn more here: https://cube.dev/docs/caching/pre-aggregations/getting-started  
+
+    main: {
+      measures: [Demoapp.count],
+      dimensions: [Demoapp.name]
+    }
   },
-  
-  joins: {
-    
-  },
-  
+  joins: {},
   measures: {
-    count: {
+    count22: {
       type: `count`,
       drillMembers: [name]
     }
   },
-  
   dimensions: {
     name: {
       sql: `name`,
